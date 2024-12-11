@@ -66,6 +66,7 @@ function ralla(jugador){
 }
 //Creamos esta funcion que nos muestra por pantalla la estructura de juego, aqui vamos llamando al mapa y a todas sus posiciones para ver las jugadas.
 function interficie(){
+    console.clear();
     console.log(" ");
     console.log("**TRES EN RALLA**");
     console.log(" ");
@@ -240,7 +241,6 @@ else if (multi == 1) {
             console.log("Empate, nadie a ganado esta partida.");
             break;
         }
-        console.log(jugadas)
         //Hacemos que la funcion Math.random 
         let filaMaquina = Number.parseInt((Math.random() * 3));
         let columnMaquina = Number.parseInt((Math.random() * 3));
